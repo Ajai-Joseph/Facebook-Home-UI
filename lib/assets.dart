@@ -1,4 +1,4 @@
-String ajai="assets/avatar/ajai.jpeg";
+String ajai="assets/avatar/ajai.jpg";
 String arnold="assets/avatar/arnold.jpg";
 String lee="assets/avatar/lee.jpg";
 String nolan="assets/avatar/nolan.jpg";
