@@ -82,7 +82,7 @@ class PostCard extends StatelessWidget {
   }
 
   Widget footerSection() {
-    return Container(
+    return Container(margin: EdgeInsets.only(top: 5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -108,7 +108,7 @@ class PostCard extends StatelessWidget {
 
               children: [
                 Text(
-                  "1k",
+                  "1k ",
                   style: TextStyle(color: Colors.grey[700]),
                 ),
                 Text(
@@ -117,7 +117,7 @@ class PostCard extends StatelessWidget {
                 ),
                 SizedBox(width: 5,),
                 Text(
-                  "100",
+                  "100 ",
                   style: TextStyle(color: Colors.grey[700]),
                 ),
                 Text(

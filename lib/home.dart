@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:facebook/sections/headerButtonSection.dart';
 import 'package:facebook/sections/statusSection.dart';
 import 'package:facebook/sections/storySection.dart';
@@ -19,6 +21,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -49,6 +52,9 @@ class Home extends StatelessWidget {
             StatusSection(),
             divider(1),
             HeaderButtonSection(),
+            SizedBox(
+              height: 5,
+            ),
             divider(10),
             RoomSection(),
             divider(10),
@@ -58,7 +64,7 @@ class Home extends StatelessWidget {
               avatar: nolan,
               name: "Christopher Nolan",
               time: "5h",
-              postImage: g,
+              postImage: nolan_movies,
             ),
             divider(10),
             PostCard(

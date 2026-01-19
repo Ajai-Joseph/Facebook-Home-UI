@@ -53,7 +53,7 @@ class StoryCard extends StatelessWidget {
             child: Text(
               labelText != null ? labelText : "N/A",
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.white,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),

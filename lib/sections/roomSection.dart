@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:facebook/assets.dart';
 
 class RoomSection extends StatelessWidget {
-  Widget createRoomButton()
-  {
+  Widget createRoomButton() {
     return Container(
-      padding: EdgeInsets.only(left: 5,right: 5),
+      padding: EdgeInsets.only(left: 5, right: 5),
       child: OutlinedButton.icon(
         style: ElevatedButton.styleFrom(
           shape: StadiumBorder(),
@@ -25,6 +24,7 @@ class RoomSection extends StatelessWidget {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,15 +34,38 @@ class RoomSection extends StatelessWidget {
         padding: EdgeInsets.all(10),
         children: [
           createRoomButton(),
-          Avatar(displayImage: sherlock,displayStatus: true,),
-          Avatar(displayImage: nolan,displayStatus: true,),
-          Avatar(displayImage: lee,displayStatus: true,),
-          Avatar(displayImage: scott,displayStatus: true,),
-          Avatar(displayImage: arnold,displayStatus: true,),
-          Avatar(displayImage: tony,displayStatus: true,),
-          Avatar(displayImage: watson,displayStatus: true,),
-          Avatar(displayImage: robert,displayStatus: true,),
-
+          Avatar(
+            displayImage: nolan,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: robert,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: scott,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: arnold,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: tony,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: watson,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: lee,
+            displayStatus: true,
+          ),
+          Avatar(
+            displayImage: sherlock,
+            displayStatus: true,
+          ),
         ],
       ),
     );
